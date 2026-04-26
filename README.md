@@ -367,8 +367,8 @@ You can run this as a **completely independent microservice** in your infrastruc
 
 ```bash
 # Clone/fork the repository
-git clone git@github.com:your-org/queue-schema-validator.git
-cd queue-schema-validator
+git clone https://github.com/glacueva/laravel-queue-schema.git
+cd laravel-queue-schema
 
 # Set up as Laravel app
 composer install
