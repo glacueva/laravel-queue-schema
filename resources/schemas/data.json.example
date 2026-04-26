@@ -1,0 +1,20 @@
+[
+    {
+        "publisher": "people.email_updated",
+        "consumers": ["marketing.send_email", "analytics.analyze_email"],
+        "rules": [
+            {
+                "field": "email",
+                "validation": ["required", "email"]
+            },
+            {
+                "field": "user_id",
+                "validation": ["required", "integer"]
+            },
+            {
+                "field": "updated_at",
+                "validation": ["required", "date"]
+            }
+        ]
+    }
+]

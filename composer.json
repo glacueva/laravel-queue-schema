@@ -1,0 +1,57 @@
+{
+    "name": "glacueva/laravel-queue-schema",
+    "description": "A Laravel package to manage message queue schemas with JSON Schema validation.",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["laravel", "schema", "validation", "json-schema", "queue"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillem Lacueva",
+            "homepage": "https://www.linkedin.com/in/guillem-lacueva-beltran-01b326125/",
+            "role": "Software Engineer - Backend Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "ext-json": "*",
+        "illuminate/validation": "^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glacueva\\LaravelQueueSchema\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Glacueva\\LaravelQueueSchema\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "mockery/mockery": "^1.6",
+        "fakerphp/faker": "^1.23",
+        "orchestra/testbench": "^11.0",
+        "laravel/pint": "^1.29",
+        "rector/rector": "^2.4",
+        "driftingly/rector-laravel": "^2.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Glacueva\\LaravelQueueSchema\\Providers\\QueueSchemaServiceProvider"
+            ],
+            "aliases": {
+                "QueueSchema": "Glacueva\\LaravelQueueSchema\\Facades\\QueueSchema"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
